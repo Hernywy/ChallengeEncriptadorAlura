@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChallengeAlura</title>
+    <link rel="stylesheet" href="/styles/style.css">
+</head>
+<body>
+    <main class="contenedor_principal">
+        <section class="contenido">  
+            <img class="contenedor_principal_logo" src="/assets/Logo.png" alt="Logo de Alura"> 
+            <div class ="contenedor_principal_encriptador_desencriptador">
+                <div class="contenedor_principal_encriptador">
+                    <textarea class="texto" type="text" required placeholder="Ingrese el texto aqui" id="Input"></textarea>
+                    <div class="contenedor_diclaimer">
+                        <img src="/assets/Group.png" alt="">
+                        <p>Solo letras minúsculas y sin acentos</p>
+                    </div>
+                    <div class="Botones">
+                        <button class="boton-encriptar" onclick="getTextAndShow()">Encriptar</button>
+                        <button class = "boton-desencriptar" onclick="getTextAndDecrypt()">Desencriptar</button>
+                    </div>
+                </div>
+                <div class="contenido_dos" id="Imagen">
+                    <img src="/assets/Muñeco.png" alt="Muñeco con lupa">
+                    <p class="mensaje-noencontrado">Ningún mensaje fue encontrado</p>
+                    <p class="mensaje-texto">Ingresa el texto que desees encriptar o desencriptar.</p>
+                </div>
+                <div class="contenido_dos_hidden" id="textoEncriptado">
+                    <textarea id="texto-encriptado"></textarea>
+                    <button onclick="copyText();">Copiar</button>
+                </div>
+            </div>
+        </section>
+        
+    </main>
+    <footer>
+
+    </footer>
+    <script src="app.js" defer></script>
+</body>
+</html>
